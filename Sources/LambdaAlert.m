@@ -1,7 +1,6 @@
 #import "LambdaAlert.h"
 
 @interface LambdaAlert () <UIAlertViewDelegate>
-@property(strong) UIAlertView *alert;
 @property(strong) NSMutableArray *blocks;
 @property(strong) id keepInMemory;
 @end
