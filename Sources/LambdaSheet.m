@@ -25,7 +25,7 @@
 {
     if (!block) block = ^{};
     [sheet addButtonWithTitle:title];
-    [blocks addObject:[block copy]];
+    [blocks addObject:[[block copy] autorelease]];
 }
 
 - (void) addDestructiveButtonWithTitle: (NSString*) title block: (dispatch_block_t) block

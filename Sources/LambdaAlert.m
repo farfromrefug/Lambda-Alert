@@ -28,7 +28,7 @@
 {
     if (!block) block = ^{};
     [alert addButtonWithTitle:title];
-    [blocks addObject:[block copy]];
+    [blocks addObject:[[block copy] autorelease]];
 }
 
 - (void) alertView: (UIAlertView*) alertView didDismissWithButtonIndex: (NSInteger) buttonIndex
